@@ -21,6 +21,7 @@
 9. Now we will commit the changes to our repo:
 `git commit -m "message title" -m "description"`
  * The -m means message, and it should specify what and why the changes being commited were made
+ * if there are only modified files and no new created files, we can use a shortcut: `git commit -am "message"` directly after step 6. This will add and commit the files via single command
 10. These changes are now saved locally, but still not saved on the github
 11. Now we push these changes on the remote repository:
 `git push origin master`
@@ -30,9 +31,11 @@
 13. To clear the terminal:
 `clear`
 14. Update the local repo:
-`git pull`
+`git pull origin master`
  * This will update the files on the local machine
  * We can clone a repo only once, thus this is used to update the repos
+ * if we have defined an upstream using `-u` then we only need to use `git pull` command
+
 
 ## Making a new repo on the local machine and pushing it onto GITHUB
 
@@ -56,7 +59,43 @@
 9. Now we can push:
 `git push origin master`
  * If we use `git push -u origin master` we will define an upstream, ie, next time just typing `git push` will by default push it to origin master and we dont have to type it again and again
+ * This will push the code on the master branch
+ * to push on the other branch, replace master with the branch name: `git push origin branch-name`
 10. Refresh the Github page and see the changes
+
+
+## GIT Branching
+
+1. To see the branches:
+`git branch`
+ * if there are no branches, it will just show master
+ * in case of multiple branches, the branch with the `*` will show the branch we are in currently
+ * If you are using terminal outside VSCode, you may need to press `Q` to gome back to terminal
+2. To create a new branch:
+`git checkout -b Branch-name`
+3. Check branches:
+`git branch`
+4. Switch between branches:
+`git checkout branch-name`
+ * we can hit the `tab` button and it will autocomplete the branch name
+ * we can type any part of the branch-name and it will autocomplete it
+ * to switch to master branch: `git checkout master`
+ * check which branch you are on: `git branch`
+5. Now we can use the steps 6-9
+6. To check the differences between the master and the new branch:
+ * Save the changes and push
+ * change the branch to the master branch
+ * now type: `git diff branch-name`
+7. To merge:
+`git merge branch-name`
+ * we can also merge from the github website
+8. if we type `git branch` it still shows the branch even though we have merged it to the master branch
+ * we do not require the branch that is merged and can delete it using: `git branch -d branch-name`
+ * we can verify from command `git branch`
+9. handling **merge conflicts** :
+ * 
+
+
 
 ### Additional stuff
 1. Run the
