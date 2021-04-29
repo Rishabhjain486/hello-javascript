@@ -1,4 +1,4 @@
-# This is my first GIT Repo
+# JavaScript Basics
 
 This repo consists of code written while learning the basic JS conepts 
 
