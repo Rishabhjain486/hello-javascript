@@ -1,1 +1,3 @@
-This is my firt GIT Repo
+This is my first GIT Repo
+
+This repo consists of code written while learning the basic JS conepts 
