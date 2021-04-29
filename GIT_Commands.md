@@ -34,6 +34,7 @@
  * This will update the files on the local machine
  * We can clone a repo only once, thus this is used to update the repos
 
+
 ## Making a new repo on the local machine and pushing it onto GITHUB
 
 1. go into the newly created repo:
@@ -57,6 +58,27 @@
 `git push origin master`
  * If we use `git push -u origin master` we will define an upstream, ie, next time just typing `git push` will by default push it to origin master and we dont have to type it again and again
 10. Refresh the Github page and see the changes
+
+
+## GIT Branching
+
+1. To see the branches:
+`git branch`
+ * if there are no branches, it will just show master
+ * in case of multiple branches, the branch with the `*` will show the branch we are in currently
+ * If you are using terminal outside VSCode, you may need to press `Q` to gome back to terminal
+2. To create a new branch:
+`git checkout -b Branch-name`
+3. Check branches:
+`git branch`
+4. Switch between branches:
+`git checkout branch-name`
+ * we can hit the `tab` button and it will autocomplete the branch name
+ * we can type any part of the branch-name and it will autocomplete it
+ * to switch to master branch: `git checkout master`
+ * check which branch you are on: `git branch`
+5. 
+
 
 ### Additional stuff
 1. Run the
