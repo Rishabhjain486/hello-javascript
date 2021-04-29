@@ -90,7 +90,8 @@
 `git merge branch-name`
  * we can also merge from the github website
 8. if we type `git branch` it still shows the branch even though we have merged it to the master branch
- * we do not require the branch that is merged and can delete it using: `git branch -d branch-name`
+ * we do not require the branch that is merged and can delete it
+ * switch to the master branch and delete the new branch using: `git branch -d branch-name`
  * we can verify from command `git branch`
 9. handling **merge conflicts** :
  * 
