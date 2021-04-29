@@ -21,6 +21,7 @@
 9. Now we will commit the changes to our repo:
 `git commit -m "message title" -m "description"`
  * The -m means message, and it should specify what and why the changes being commited were made
+ * if there are only modified files and no new created files, we can use a shortcut: `git commit -am "message"` directly after step 6. This will add and commit the files via single command
 10. These changes are now saved locally, but still not saved on the github
 11. Now we push these changes on the remote repository:
 `git push origin master`
@@ -30,9 +31,10 @@
 13. To clear the terminal:
 `clear`
 14. Update the local repo:
-`git pull`
+`git pull origin master`
  * This will update the files on the local machine
  * We can clone a repo only once, thus this is used to update the repos
+ * if we have defined an upstream using `-u` then we only need to use `git pull` command
 
 
 ## Making a new repo on the local machine and pushing it onto GITHUB
@@ -86,6 +88,12 @@
  * now type: `git diff branch-name`
 7. To merge:
 `git merge branch-name`
+ * we can also merge from the github website
+8. if we type `git branch` it still shows the branch even though we have merged it to the master branch
+ * we do not require the branch that is merged and can delete it using: `git branch -d branch-name`
+ * we can verify from command `git branch`
+9. handling **merge conflicts** :
+ * 
 
 
 
