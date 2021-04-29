@@ -1,6 +1,6 @@
-### USING GIT WITH VSCODE: COMMANDS TO BE USED
+# USING GIT WITH VSCODE: COMMANDS TO BE USED
 
-### Working with an existing repo on GITHUB:
+## Working with an existing repo on GITHUB:
 
 1. Open the git folder on the local machine
 2. Cloning a repo:
@@ -30,7 +30,7 @@
 13. To clear the terminal:
 `clear`
 
-### Making a new repo on the local machine and pushing it onto GITHUB
+## Making a new repo on the local machine and pushing it onto GITHUB
 
 1. go into the newly created repo:
 `cd ../new_repo`
@@ -54,9 +54,8 @@
  * If we use `git push -u origin master` we will define an upstream, ie, next time just typing `git push` will by default push it to origin master and we dont have to type it again and again
 10. Refresh the Github page and see the changes
 
-
-
-50. Run the
+### Additional stuff
+1. Run the
 following command and follow the instructions in your editor to edit
 your configuration file:
 ` git config --global --edit` 
