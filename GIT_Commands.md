@@ -57,6 +57,8 @@
 9. Now we can push:
 `git push origin master`
  * If we use `git push -u origin master` we will define an upstream, ie, next time just typing `git push` will by default push it to origin master and we dont have to type it again and again
+ * This will push the code on the master branch
+ * to push on the other branch, replace master with the branch name: `git push origin branch-name`
 10. Refresh the Github page and see the changes
 
 
@@ -78,6 +80,13 @@
  * to switch to master branch: `git checkout master`
  * check which branch you are on: `git branch`
 5. Now we can use the steps 6-9
+6. To check the differences between the master and the new branch:
+ * Save the changes and push
+ * change the branch to the master branch
+ * now type: `git diff branch-name`
+7. To merge:
+`git merge branch-name`
+
 
 
 ### Additional stuff
