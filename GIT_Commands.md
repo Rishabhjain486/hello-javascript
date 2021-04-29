@@ -77,7 +77,7 @@
  * we can type any part of the branch-name and it will autocomplete it
  * to switch to master branch: `git checkout master`
  * check which branch you are on: `git branch`
-5. 
+5. Now we can use the steps 6-9
 
 
 ### Additional stuff
