@@ -32,7 +32,7 @@ val = parseFloat('100.30');
 // console.log(val.toFixed(2));
 
 const val1 = String(5);
-const val2 = 6;
+const val2 = 8;
 const sum = Number(val1 + val2);
 
 console.log(sum);
