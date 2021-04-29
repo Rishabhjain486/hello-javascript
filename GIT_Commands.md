@@ -29,6 +29,10 @@
 12. After running the above command go to github and refresh the page to see the changes
 13. To clear the terminal:
 `clear`
+14. Update the local repo:
+`git pull`
+ * This will update the files on the local machine
+ * We can clone a repo only once, thus this is used to update the repos
 
 ## Making a new repo on the local machine and pushing it onto GITHUB
 
