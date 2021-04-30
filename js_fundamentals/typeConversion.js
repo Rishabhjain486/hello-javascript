@@ -25,15 +25,19 @@ val = Number([1,2,3]);
 val = parseInt('100.30');
 val = parseFloat('100.30');
 
-// Output
+// // Output
 // console.log(val);
 // console.log(typeof val);
-// //console.log(val.length);
+// // console.log(val.length);
 // console.log(val.toFixed(2));
 
+// Add String to Integer
 const val1 = String(5);
-const val2 = 8;
-const sum = Number(val1 + val2);
+const val2 = 5;
+const sum1 = val1 + val2;
+const sum2 = Number(val1 + val2);
 
-console.log(sum);
-console.log(typeof sum);
+console.log(sum1);
+console.log(typeof sum1);
+console.log(sum2);
+console.log(typeof sum2);
