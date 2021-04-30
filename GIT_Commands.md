@@ -94,7 +94,36 @@
  * switch to the master branch and delete the new branch using: `git branch -d branch-name`
  * we can verify from command `git branch`
 9. handling **merge conflicts** :
- * 
+ * Go to the created branch `git checkout branch-name`
+ * use `git diff master` to see the differences
+ * use `git merge master` to merge this branch into the master branch
+ * if the master branch also was updated and has a code in the same line number as yours, it will show a merge conflict
+ * best way is to view the file in VSCode and manually fix it
+ * now using `git diff` will show that we are removing and adding the same lines, but we still need to commit since we modified the file
+ * since we only modified, we can add and commit together `git commit -am "message"`
+
+
+ ## Undoing in GIT
+
+ 1. How to undo changes if we accidentally made a wrong commit etc
+ 2. to undo a `git add` command:
+ `git reset` or `git reset filename`
+ 3. To undo a commit:
+ `git reset HEAD~1`
+  * HEAD is the pointer to the last commit
+  * HEAD~1 means to go one commit back, so the HEAD will now point to the earlier commit, effectively undoing our latest commit
+4. not `git status` will again show the files as unstaged again
+5. There is no method to undo multiple commits or earlier commits
+6. We can see a log of the commits made (in reverse chronological order):
+`git log`
+ * it displays the commit messages, that is why it is good practice to add a relevant commit message
+7. git differentiates these commits with a hash number
+ * we can copy that hash number and do:
+ `git reset hashNumber`
+ * now git will unstage all the changes after that commit
+ * the local files will still show the changes, but they will not be saved on the github
+8. To completely remove the changes (and not just unstage) we use the command:
+`git reset --hard hashNumber`
 
 
 
