@@ -42,7 +42,9 @@
 1. go into the newly created repo:
 `cd ../new_repo`
 2. See the files in the folder:
-`ls -la`
+ * To see all the files with details: `ls -la`
+ * To see jus the file names: `ls -a`
+ * To see just the folders: `ls`
  * this will come as a blank till we add a file in the folder
 3. To convert this folder into a git repo:
 `git init`
