@@ -6,7 +6,9 @@
 2. Cloning a repo:
 `git clone <SSH Link>`
 3. See the files in the folder:
-`ls -la`
+ * To see all the files with details: `ls -la`
+ * To see jus the file names: `ls -a`
+ * To see just the folders: `ls`
 4. Change directory into the repo:
 `cd hello-javascript`
 5. make the changes and save the file using cmd+s
