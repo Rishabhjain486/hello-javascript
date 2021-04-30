@@ -38,6 +38,7 @@ val = firstName.lastIndexOf('l');
 
 // charAt()
 val = firstName.charAt('2');
+
 // Get last char
 val = firstName.charAt(firstName.length - 1);
 
