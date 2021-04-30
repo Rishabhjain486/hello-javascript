@@ -127,7 +127,7 @@
 
 
 
-### Additional stuff
+### Additional stuff 
 1. Run the
 following command and follow the instructions in your editor to edit
 your configuration file:
